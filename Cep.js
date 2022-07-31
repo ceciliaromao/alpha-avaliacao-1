@@ -14,9 +14,10 @@ class Cep {
   }
 
   getFormated() {
+    const num = getNum();
     const value = ''
-    for (let i = 0; i < this.cep.length; i++) {
-      i == 4 ? value += this.cep[i] + '-' : value += this.cep[i];
+    for (let i = 0; i < num.length; i++) {
+      i == 4 ? value += num[i] + '-' : value += num[i];
     }
     return value;
   }
